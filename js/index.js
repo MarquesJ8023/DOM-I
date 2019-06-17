@@ -44,7 +44,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 const navA = document.querySelectorAll('a');
 console.log(navA);
 
-navA.forEach( function( currentValue ){
+
+navA.forEach( function( currentValue ) {
   currentValue.style.color = "green";
 });
 navA[0].textContent = 'Services';
@@ -59,8 +60,9 @@ navA[4].textContent = 'About';
 
 navA[5].textContent = 'Contact';
 
+
 const navChild = document.createElement('a');
-navChild.innerHTML = 'Marques';
+navChild.textContent = 'Marques';
 navA[5].appendChild(navChild);
 
 const navPreChild = document.createElement('a');
@@ -103,4 +105,3 @@ contact[2].textContent = 'sales@greatidea.io';
 console.log(contact);
 
 document.querySelector('footer').querySelector('p').textContent = 'Copyright Great Idea! 2018';
-footer.innerHTML = siteContent['footer']['copyright']
