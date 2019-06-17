@@ -43,6 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const navA = document.querySelectorAll('a');
 console.log(navA);
+
 navA.forEach( function( currentValue ){
   currentValue.style.color = "green";
 });
@@ -57,6 +58,14 @@ navA[3].textContent = 'Features';
 navA[4].textContent = 'About';
 
 navA[5].textContent = 'Contact';
+
+const navChild = document.createElement('a');
+navChild.innerHTML = 'Marques';
+navA[5].appendChild(navChild);
+
+const navPreChild = document.createElement('a');
+navPreChild.innerHTML = 'DarkSide';
+navA[0].prepend(navPreChild);
 
 const ctaImg = document.querySelector('.cta');
 const cta = document.querySelector('.cta-text');
