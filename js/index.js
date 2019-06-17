@@ -103,3 +103,4 @@ contact[2].textContent = 'sales@greatidea.io';
 console.log(contact);
 
 document.querySelector('footer').querySelector('p').textContent = 'Copyright Great Idea! 2018';
+footer.innerHTML = siteContent['footer']['copyright']
