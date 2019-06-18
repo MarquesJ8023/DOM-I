@@ -60,14 +60,18 @@ navA[4].textContent = 'About';
 
 navA[5].textContent = 'Contact';
 
+const nav = document.getElementsByTagName('nav')[0];
 
-const navChild = document.createElement('a');
-navChild.textContent = 'Marques';
-navA[5].appendChild(navChild);
+const nav1 = document.createElement('a');
+nav1.textContent = 'Marques';
+nav1.style.color = 'green';
 
-const navPreChild = document.createElement('a');
-navPreChild.innerHTML = 'DarkSide';
-navA[0].prepend(navPreChild);
+const nav2 = document.createElement('a');
+nav2.textContent = 'Darkside';
+nav2.style.color = 'green';
+
+nav.prepend(nav1);
+nav.append(nav2);
 
 const ctaImg = document.querySelector('.cta');
 const cta = document.querySelector('.cta-text');
